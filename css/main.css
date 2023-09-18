@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.modal {
+  position: fixed;
+  width: 320px;
+  height: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+}
+
+.modal-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.modal-menu__geometry {
+  padding: 18px 24px 32px 24px;
+}
+.modal-menu__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 46px;
+}
+.modal-menu__logo-block {
+  display: flex;
+  flex-direction: row;
+}
+.modal-menu__close-button {
+  margin-right: 16px;
+}
+.modal-menu__list {
+  list-style-type: none;
+}
+.modal-menu__list-element {
+  position: relative;
+  margin-bottom: 32px;
+}
+.modal-menu__list-element:last-child {
+  margin-bottom: 0;
+}
+.modal-menu__link {
+  position: relative;
+  display: inline-block;
+  color: #1B1C21;
+}
+.modal-menu__link:hover {
+  color: #7E7E82;
+  transition: all 0.3s ease 0s;
+}
+.modal-menu__link:hover::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 4px;
+  left: -24px;
+  top: -5px;
+  border-radius: 0 50% 50% 0;
+  background: #41F6D7;
+  transform: translateX(0);
+}
+.modal-menu__link:focus {
+  color: #7E7E82;
+  transition: all 0.3s ease 0s;
+}
+.modal-menu .link {
+  text-decoration: none;
+  font-family: LakesM, sans-serif;
+}
+.modal-menu__info {
+  margin-bottom: 4vh;
+}
+.modal-menu__buttons {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 16px;
+}
+.modal-menu__mail {
+  color: #1B1C21;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+.modal-menu__phone {
+  text-decoration: none;
+  font-size: 24px;
+  font-family: LakesB, sans-serif;
+  color: #1B1C21;
+}
+.modal-menu__langs {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 32px;
+}
+.modal-menu__lang {
+  display: inline-block;
+  margin-right: 7px;
+  color: #1B1C21;
+}
+.modal-menu__lang:hover {
+  color: #7E7E82;
+  transition: all 0.3s ease 0s;
+}
+.modal-menu__lang:focus {
+  color: #7E7E82;
+  transition: all 0.3s ease 0s;
+}
+
+.button-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+}
+.button-circle__close {
+  background: url("../img/close.svg");
+  background-repeat: no-repeat;
+}
+.button-circle__find {
+  background: url("../img/find.svg");
+  background-repeat: no-repeat;
+}
+.button-circle__phone {
+  background: url("../img/call.svg");
+  background-repeat: no-repeat;
+  margin-right: 16px;
+}
+.button-circle__message {
+  background: url("../img/chat.svg");
+  background-repeat: no-repeat;
+  margin-right: 16px;
+}
+.button-circle__profile {
+  background: url("../img/profile.svg");
+  background-repeat: no-repeat;
+}
+
+/*# sourceMappingURL=main.css.map */

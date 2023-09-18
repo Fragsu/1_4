@@ -1,0 +1,213 @@
+$color-1: #FFFFFF;
+$color-2: #1B1C21;
+$color-3: #7E7E82;
+$color-4: #FF3E79;
+$color-5: #EAEAEA;
+$color-6: #F8F8F8;
+$color-7: #B8FFEC;
+$color-8: #41F6D7;
+
+
+$font-family-B: LakesB, sans-serif;
+$font-family-M: LakesM, sans-serif;
+$font-family-R: LakesR, sans-serif;
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.modal {
+  position: fixed;
+  width: 320px;
+  height: 100%;
+  background-color: $color-1;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+
+}
+
+.modal-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+
+  &__geometry {
+    padding: 18px 24px 32px 24px;
+  }
+
+  &__navigation {
+
+  }
+
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 46px;
+  }
+
+  &__logo-block {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__close-button {
+    margin-right: 16px;
+  }
+
+
+
+  &__list {
+    list-style-type: none
+
+  }
+
+  &__list-element {
+    position: relative;
+    margin-bottom: 32px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: inline-block;
+    color: $color-2;
+    &:hover {
+      color: $color-3;
+      transition: all 0.3s ease 0s;
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 4px;
+        left: -24px;
+        top: -5px;
+
+        border-radius: 0 50% 50% 0;
+        background: $color-8;
+        transform: translateX(0)
+      }
+    }
+
+    &:focus {
+      color: $color-3;
+      transition: all 0.3s ease 0s;
+      //&::after {
+      //  content: '';
+      //  position: absolute;
+      //  display: block;
+      //  height: 32px;
+      //  width: 4px;
+      //  left: -7.5%;
+      //  top: -5px;
+      //
+      //  border-radius: 0 50% 50% 0;
+      //  background: red;
+      //}
+    }
+  }
+
+  .link {
+    text-decoration: none;
+    font-family: $font-family-M;
+  }
+
+  &__info{
+    margin-bottom: 4vh;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+  }
+
+  &__mail {
+    color: $color-2;
+    display: inline-block;
+    margin-bottom: 12px;
+  }
+
+  &__phone {
+    text-decoration: none;
+    font-size: 24px;
+    font-family: $font-family-B;
+    color: $color-2;
+
+  }
+
+  &__langs {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 32px;
+  }
+
+  &__lang {
+    display: inline-block;
+    margin-right: 7px;
+    color: $color-2;
+    &:hover {
+      color: $color-3;
+      transition: all 0.3s ease 0s;
+    }
+
+    &:focus {
+      color: $color-3;
+      transition: all 0.3s ease 0s;
+    }
+  }
+
+}
+
+
+.button-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border: none;
+
+  &__close{
+    background: url("../img/close.svg");
+    background-repeat: no-repeat;
+  }
+
+  &__find{
+    background: url("../img/find.svg");
+    background-repeat: no-repeat;
+  }
+
+  &__phone{
+    background: url("../img/call.svg");
+    background-repeat: no-repeat;
+    margin-right: 16px;
+  }
+
+  &__message{
+    background: url("../img/chat.svg");
+    background-repeat: no-repeat;
+    margin-right: 16px;
+  }
+
+  &__profile{
+    background: url("../img/profile.svg");
+    background-repeat: no-repeat;
+  }
+}
